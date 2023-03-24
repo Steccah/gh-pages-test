@@ -2,7 +2,7 @@ name: directory-listing
 on: [push]
 
 jobs:
-  pages-directory-listing:
+  pages-directory-listing 🗞️:
     runs-on: ubuntu-latest
     name: Directory Listings Index
     steps:
@@ -21,7 +21,7 @@ jobs:
         with:
           path: '.'      # upload generated folder
   
-  deploy:
+  deploy 🚀:
     needs: pages-directory-listing
     permissions:
       pages: write      # to deploy to Pages
