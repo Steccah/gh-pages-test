@@ -12,9 +12,9 @@ jobs:
           ref: main    #checkout different branch
 
       - name: Generate Directory Listings
-        uses: jayanta525/github-pages-directory-listing@v3.0.0
+        uses: steccah/github-pages-directory-listing@v3.0.0-alpha
         with:
-          FOLDER: data      #directory to generate index
+          FOLDER: .github/../      #directory to generate index
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
