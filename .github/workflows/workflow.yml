@@ -2,9 +2,9 @@ name: directory-listing
 on: [push]
 
 jobs:
-  pages-directory-listing 🗞️:
+  pages-directory-listing:
     runs-on: ubuntu-latest
-    name: Directory Listings Index
+    name: Directory Listings Index 🗞️
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -21,7 +21,8 @@ jobs:
         with:
           path: '.'      # upload generated folder
   
-  deploy 🚀:
+  deploy:
+    name: Deploy 🚀
     needs: pages-directory-listing
     permissions:
       pages: write      # to deploy to Pages
